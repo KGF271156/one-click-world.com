@@ -1,6 +1,49 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OneClick World</title>
+<title>OneClick World | One click to every homeland</title>
+<meta name="description" content="OneClick World connects diaspora communities with their homelands: Ireland, Italy, Spain, Poland, Scotland and more.">
 <link rel="icon" href="assets/oneclick-world-mark.svg" type="image/svg+xml">
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0B2F63;color:#fff;font-family:system-ui,sans-serif;text-align:center;padding:24px}img{width:140px;height:auto}h1{margin:18px 0 6px;font-size:clamp(28px,5vw,44px)}p{opacity:.85;margin:0}</style></head>
-<body><main><img src="assets/oneclick-world-mark.svg" alt="OneClick World"><h1>OneClick World</h1><p>One platform connecting diasporas around the world. Coming soon.</p></main></body></html>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="site-header"><div class="wrap header-row">
+  <a href="index.html" class="logo"><img src="assets/oneclick-world-mark.svg" alt=""> OneClick World</a>
+  <nav class="nav"><a href="#countries">Countries</a><a href="#why">Why OneClick</a><a href="#advertise">Advertise</a><a href="#join" class="btn">Keep me posted</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div><div class="eyebrow">One platform · every homeland</div>
+  <h1>One click to <em>every homeland.</em></h1>
+  <p class="lead">Millions of people live far from where their families come from. OneClick connects them with the news, culture, places and communities of home, one country at a time.</p>
+  <div class="row"><a href="#countries" class="btn">Choose your country</a><a href="#why" class="btn ghost">How it works</a></div></div>
+  <div class="hero-art"><img src="assets/oneclick-world-mark.svg" alt="OneClick World logo: a globe with a click cursor"></div>
+</div></section>
+
+<section class="block" id="countries"><div class="wrap">
+  <div class="head"><div class="eyebrow">The OneClick family</div><h2>Pick your homeland</h2><p>Each OneClick site is built around its own country's regions, culture and communities, with local news, events and a place for the diaspora to meet.</p></div>
+  <div class="tiles" id="tiles"><p>Loading…</p></div>
+</div></section>
+
+<section class="block tint" id="why"><div class="wrap">
+  <div class="head"><div class="eyebrow">Why OneClick</div><h2>Home, in one click</h2></div>
+  <div class="cols">
+    <div class="card"><h3>Every region, mapped</h3><p>Click a county, region or council area to see what is happening there, what it is known for and who comes from it.</p></div>
+    <div class="card"><h3>News from home</h3><p>Local headlines, gathered and summarised for each area, so you can follow the place your family comes from.</p></div>
+    <div class="card"><h3>Culture and community</h3><p>Festivals, food, sport and language, plus societies, clubs and groups for people living abroad.</p></div>
+    <div class="card"><h3>Plan the trip home</h3><p>Share your dates and interests and get a draft itinerary by email, with flights and hotels when you are ready.</p></div>
+  </div>
+</div></section>
+
+<section class="block dark" id="join"><div class="wrap">
+  <div class="head"><div class="eyebrow" style="color:var(--orange)">Stay in touch</div><h2>Be first to know about new countries</h2><p>We are adding new homelands all the time. Leave your email and we will tell you when yours goes live.</p></div>
+  <form class="signup" id="signup"><input type="email" required placeholder="Your email address" aria-label="Email address"><button class="btn" type="submit">Keep me posted</button></form>
+  <div class="note">This opens an email to us. A proper sign-up list is coming.</div>
+</div></section>
+
+<section class="block" id="advertise"><div class="wrap">
+  <div class="head"><div class="eyebrow">For businesses</div><h2>Reach the diaspora</h2><p>One conversation can put you in front of Irish, Italian, Spanish, Polish and Scottish communities worldwide, from travel and food to property, finance and services.</p></div>
+  <a class="btn" href="mailto:info@one-click-world.com?subject=Advertising%20on%20OneClick">Talk to us about advertising</a>
+</div></section>
+
+<footer class="site-footer"><div class="wrap"><span>&copy; <script>document.write(new Date().getFullYear())</script> OneClick World · <a href="mailto:info@one-click-world.com">info@one-click-world.com</a></span><span>Part of Business Gossip ERSE Limited</span></div></footer>
+<script src="js/main.js"></script>
+</body></html>
