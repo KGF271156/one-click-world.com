@@ -1,7 +1,60 @@
-{"sites":[
- {"id":"ireland","name":"Ireland","url":"https://oneclickireland.com","status":"live","tagline":"All 32 counties, news, culture, sport and live Ireland for the Irish abroad.","stat":"32 counties"},
- {"id":"italy","name":"Italy","url":"https://oneclickitaly.com","status":"live","tagline":"All 20 regions of Italy, from the Alps to Sicily, for the Italians abroad.","stat":"20 regions"},
- {"id":"spain","name":"Spain","url":"https://oneclickspain.com","status":"live","tagline":"Spain's regions, cultures and languages, connecting Spaniards everywhere.","stat":"Regions of Spain"},
- {"id":"poland","name":"Poland","url":"https://oneclickpoland.com","status":"soon","tagline":"All 16 voivodeships, with Gaming, Paczka and Kibic, in English and Polish.","stat":"16 voivodeships"},
- {"id":"scotland","name":"Scotland","url":"https://oneclickscotland.com","status":"soon","tagline":"All 32 council areas, a clan map of Scotland, whisky and Hogmanay.","stat":"32 council areas"}
-]}
+{
+ "sites": [
+  {
+   "id": "ireland",
+   "name": "Ireland",
+   "url": "https://oneclickireland.com",
+   "status": "live",
+   "tagline": "All 32 counties, news, culture, sport and live Ireland for the Irish abroad.",
+   "stat": "32 counties"
+  },
+  {
+   "id": "italy",
+   "name": "Italy",
+   "url": "https://oneclickitaly.com",
+   "status": "live",
+   "tagline": "All 20 regions of Italy, from the Alps to Sicily, for the Italians abroad.",
+   "stat": "20 regions"
+  },
+  {
+   "id": "spain",
+   "name": "Spain",
+   "url": "https://oneclickspain.com",
+   "status": "live",
+   "tagline": "Spain's regions, cultures and languages, connecting Spaniards everywhere.",
+   "stat": "Regions of Spain"
+  },
+  {
+   "id": "poland",
+   "name": "Poland",
+   "url": "https://oneclickpoland.com",
+   "status": "soon",
+   "tagline": "All 16 voivodeships, with Gaming, Paczka and Kibic, in English and Polish.",
+   "stat": "16 voivodeships"
+  },
+  {
+   "id": "scotland",
+   "name": "Scotland",
+   "url": "https://oneclickscotland.com",
+   "status": "soon",
+   "tagline": "All 32 council areas, a clan map of Scotland, whisky and Hogmanay.",
+   "stat": "32 council areas"
+  },
+  {
+   "id": "france",
+   "name": "France",
+   "url": "https://oneclickfrance.com",
+   "status": "soon",
+   "tagline": "All 13 regions, gastronomy and savoir-vivre, in English and French.",
+   "stat": "13 regions"
+  },
+  {
+   "id": "singapore",
+   "name": "Singapore",
+   "url": "https://oneclicksingapore.com",
+   "status": "soon",
+   "tagline": "Makan, lobang and a relocation toolkit across Singapore's 5 regions.",
+   "stat": "5 regions"
+  }
+ ]
+}
