@@ -37,6 +37,7 @@ table.aud{width:100%;border-collapse:collapse;min-width:900px;font-size:15px}
     <div class="stat-card"><b>United States</b><span>is among the main diaspora locations for all 17 homelands</span></div>
   </div>
   <div class="head"><div class="eyebrow">The table</div><h2>Diaspora size by homeland</h2><p>Bars show the estimated range (scale 0 to 150M). “Ratio” is the middle of the diaspora range divided by the home population. Highlighted rows already have a OneClick site.</p></div>
+  <div class="row" style="margin-bottom:14px;align-items:center"><button class="btn" id="copyTbl" type="button">Copy table for Excel / Word</button><a class="btn ghost" id="dlCsv" href="#" style="border-color:var(--navy);color:var(--navy)">Download CSV</a><span id="copyMsg" class="small" style="margin:0"></span></div>
   <div class="tablewrap"><table class="aud">
 <thead><tr><th>#</th><th>Homeland</th><th>Diaspora (est.)</th><th>Home population</th><th>Ratio</th><th>Main diaspora locations</th></tr></thead>
 <tbody>
@@ -67,4 +68,23 @@ table.aud{width:100%;border-collapse:collapse;min-width:900px;font-size:15px}
 </div></section>
 
 <footer class="site-footer"><div class="wrap"><span>&copy; <script>document.write(new Date().getFullYear())</script> OneClick World · <a href="mailto:info@one-click-world.com">info@one-click-world.com</a></span><span>Part of Business Gossip ERSE Limited</span></div></footer>
+<script>
+(function(){
+  function rows(){var out=[['Rank','Homeland','Diaspora estimate','Home population','Ratio (mid-estimate / home)','Main diaspora locations']];
+    document.querySelectorAll('table.aud tbody tr').forEach(function(tr){var c=tr.children;
+      out.push([c[0].textContent.trim(),c[1].querySelector('strong').textContent.trim(),c[2].querySelector('.num').textContent.trim(),c[3].textContent.trim(),c[4].textContent.trim(),c[5].textContent.trim()]);});
+    return out;}
+  var msg=document.getElementById('copyMsg');
+  document.getElementById('copyTbl').onclick=function(){
+    var t=rows().map(function(r){return r.join('\t')}).join('\n');
+    function ok(){msg.textContent='Copied. Paste into Excel, Sheets or Word.';}
+    function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok();}catch(e){msg.textContent='Copy failed: use Download CSV instead.';}a.remove();}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb);}else fb();
+  };
+  document.getElementById('dlCsv').onclick=function(e){
+    var csv=rows().map(function(r){return r.map(function(v){return '"'+v.replace(/"/g,'""')+'"'}).join(',')}).join('\r\n');
+    this.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv'}));this.download='oneclick-worldwide-audience.csv';
+  };
+})();
+</script>
 </body></html>
